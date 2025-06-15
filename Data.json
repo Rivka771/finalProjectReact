@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "test",
+      "email": "test@example.com",
+      "password": "1234",
+      "purchases": [
+        {
+          "productId": 2,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "username": "רבקה",
+      "email": "rivka@example.com",
+      "password": "1234",
+      "purchases": []
+    },
+    {
+      "id": "6232",
+      "email": "A0205004163@gmail.com",
+      "password": "1234",
+      "purchases": []
+    },
+    {
+      "id": "8319",
+      "email": "A0205004173@gmail.com",
+      "password": "1111",
+      "purchases": [
+        {
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": 2,
+      "name": "מוצר לדוגמה",
+      "price": 50,
+      "image": "https://via.placeholder.com/150"
+    }
+  ]
+}
