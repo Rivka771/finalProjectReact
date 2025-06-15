@@ -5,7 +5,8 @@ import ProductPage from "./components/ProductPage";
 import LoginForm from "./components/LoginForm";
 import RegisterForm from "./components/RegisterForm";
 import ProfilePage from "./components/ProfilePage";
-
+import "./App.css"; // Assuming you have a CSS file for styles
+import ProductCard  from "./components/ProductCard";  
 
 
 function App() {
@@ -45,7 +46,7 @@ function App() {
       <main className="p-4 min-h-[80vh]">
         <Routes>
 <Route path="/" element={<HomePage user={user} />} />
-<Route path="/product" element={<ProductPage user={user} setUser={setUser} />} />
+        <Route path="/product/:id" element={<ProductPage user={user} setUser={setUser} />} />
 
           <Route path="/login" element={<LoginForm setUser={setUser} />} />
           <Route path="/register" element={<RegisterForm setUser={setUser} />} />

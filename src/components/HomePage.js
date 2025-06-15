@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import ProductCard from "../components/ProductCard";
+
 
 export default function HomePage({ user }) {
   const [products, setProducts] = useState([]);

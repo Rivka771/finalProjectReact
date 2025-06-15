@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "test",
       "email": "test@example.com",
       "password": "1234",
@@ -13,7 +13,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "username": "רבקה",
       "email": "rivka@example.com",
       "password": "1234",
@@ -23,7 +23,16 @@
       "id": "6232",
       "email": "A0205004163@gmail.com",
       "password": "1234",
-      "purchases": []
+      "purchases": [
+        {
+          "productId": "2",
+          "quantity": 1
+        },
+        {
+          "productId": "2",
+          "quantity": 4
+        }
+      ]
     },
     {
       "id": "8319",
@@ -38,7 +47,7 @@
   ],
   "products": [
     {
-      "id": 2,
+      "id": "2",
       "name": "מוצר לדוגמה",
       "price": 50,
       "image": "https://via.placeholder.com/150"
