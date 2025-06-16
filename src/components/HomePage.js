@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import ProductCard from "../components/ProductCard";
 
 
 export default function HomePage({ user }) {
@@ -21,24 +20,25 @@ export default function HomePage({ user }) {
   }
 };
 
-
   return (
-    <div className="grid grid-cols-2 gap-4 p-4">
-      {products.map((product) => (
-        <div
-          key={product.id}
-          onClick={() => handleProductClick(product.id)}
-          className="cursor-pointer border rounded p-4 shadow hover:shadow-lg transition"
-        >
-          <img
-            src={product.image}
-            alt={product.name}
-            className="w-full h-40 object-cover rounded mb-2"
-          />
-          <h3 className="text-lg font-semibold">{product.name}</h3>
-          <p>מחיר: {product.price} ₪</p>
-        </div>
-      ))}
-    </div>
-  );
+  <div className="products-grid">
+    {products.map((product) => (
+      <div
+        key={product.id}
+        onClick={() => handleProductClick(product.id)}
+        className="product-card"
+      >
+        <img
+          src={product.image}
+          alt={product.name}
+        />
+        <h3>{product.name}</h3>
+        <p>מחיר: {product.price} ₪</p>
+      </div>
+    ))}
+  </div>
+);
+
+
+
 }

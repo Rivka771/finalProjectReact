@@ -5,8 +5,7 @@ import ProductPage from "./components/ProductPage";
 import LoginForm from "./components/LoginForm";
 import RegisterForm from "./components/RegisterForm";
 import ProfilePage from "./components/ProfilePage";
-import "./App.css"; // Assuming you have a CSS file for styles
-import ProductCard  from "./components/ProductCard";  
+import './App.css';
 
 
 function App() {
@@ -18,30 +17,30 @@ function App() {
 
   return (
     <Router>
-      <header className="p-4 bg-blue-600 text-white flex justify-between items-center">
-        <h1 className="text-xl font-bold cursor-pointer" onClick={() => window.location.href = "/"}>
-          אתר הגרלות
-        </h1>
-        <nav className="space-x-4">
-          <Link to="/">בית</Link>
-          {user ? (
-            <>
-              <Link to="/profile">האזור האישי</Link>
-              <button
-                onClick={handleLogout}
-                className="bg-red-600 px-3 py-1 rounded text-white"
-              >
-                התנתק
-              </button>
-            </>
-          ) : (
-            <>
-              <Link to="/login">התחברות</Link>
-              <Link to="/register">הרשמה</Link>
-            </>
-          )}
-        </nav>
-      </header>
+      <header className="main-header">
+  <div className="header-container">
+    <h1 className="site-title" onClick={() => window.location.href = "/"}>
+       אתר ההגרלות
+    </h1>
+    <nav className="nav-links">
+      <Link to="/">בית</Link>
+      {user ? (
+        <>
+          <Link to="/profile">האזור האישי</Link>
+          <button onClick={handleLogout} className="logout-button">
+            התנתק
+          </button>
+        </>
+      ) : (
+        <>
+          <Link to="/login">התחברות</Link>
+          <Link to="/register">הרשמה</Link>
+        </>
+      )}
+    </nav>
+  </div>
+</header>
+
 
       <main className="p-4 min-h-[80vh]">
         <Routes>

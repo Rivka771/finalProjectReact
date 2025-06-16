@@ -31,6 +31,22 @@
         {
           "productId": "2",
           "quantity": 4
+        },
+        {
+          "productId": "2",
+          "quantity": 1
+        },
+        {
+          "productId": "4",
+          "quantity": 1
+        },
+        {
+          "productId": "10",
+          "quantity": 1
+        },
+        {
+          "productId": "4",
+          "quantity": 1
         }
       ]
     },
@@ -43,14 +59,115 @@
           "quantity": 1
         }
       ]
+    },
+    {
+      "id": "84b9",
+      "email": "hadas@gmail.com",
+      "password": "1234",
+      "purchases": [
+        {
+          "productId": "2",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "c7fb",
+      "email": "iokyh@gmail.com",
+      "password": "1234",
+      "purchases": []
     }
   ],
   "products": [
     {
       "id": "2",
-      "name": "מוצר לדוגמה",
+      "name": "מוצרי קוסמטיקה יוקרתיים",
       "price": 50,
-      "image": "https://via.placeholder.com/150"
+      "image": "/images/assortment-beauty-products-displayed-shelf.jpg"
+    },
+    {
+      "id": "3",
+      "name": "וילה מושלמת מהחלומות",
+      "price": 50,
+      "image": "/images/luxurious-villa-with-modern-architectural-design.jpg"
+    },
+    {
+      "id": "4",
+      "name": "חצי מליון שקל מוזמן",
+      "price": 50,
+      "image": "/images/photorealistic-money-concept.jpg"
+    },
+    {
+      "id": "5",
+      "name": "רכב יוקרתי",
+      "price": 50,
+      "image": "/images/צילום מסך 2025-06-16 124701.png"
+    },
+    {
+      "id": "6",
+      "name": "קניה משפחתית לחצי שנה",
+      "price": 50,
+      "image": "/images/צילום מסך 2025-06-16 124747.png"
+    },
+    {
+      "id": "7",
+      "name": "טבעת יהלום",
+      "price": 50,
+      "image": "/images/צילום מסך 2025-06-16 124827.png"
+    },
+    {
+      "id": "8",
+      "name": "סט תכשיטים יוקרתי",
+      "price": 50,
+      "image": "/images/צילום מסך 2025-06-16 124859.png"
+    },
+    {
+      "id": "9",
+      "name": "טיסה זוגית לאירופה",
+      "price": 50,
+      "image": "/images/צילום מסך 2025-06-16 125009.png"
+    },
+    {
+      "id": "10",
+      "name": "זיכוי לשופינג שווה",
+      "price": 50,
+      "image": "/images/צילום מסך 2025-06-16 125321.png"
+    },
+    {
+      "id": "11",
+      "name": "חופשה מהחלומות",
+      "price": 50,
+      "image": "/images/צילום מסך 2025-06-16 125414.png"
+    },
+    {
+      "id": "12",
+      "name": "שעת ספא",
+      "price": 50,
+      "image": "/images/צילום מסך 2025-06-16 125653.png"
+    },
+    {
+      "id": "13",
+      "name": "מנקה לשנה",
+      "price": 50,
+      "image": "/images/צילום מסך 2025-06-16 125723.png"
+    },
+    {
+      "id": "14",
+      "name": "מקרר עם תכולה מלאה",
+      "price": 50,
+      "image": "/images/צילום מסך 2025-06-16 125842.png"
+    },
+    {
+      "id": "15",
+      "name": "מטבח יוקרתי חדש",
+      "price": 50,
+      "image": "/images/צילום מסך 2025-06-16 125911.png"
+    },
+    {
+      "id": "16",
+      "name": "ארוחה זוגית מפנקת במסעדה יוקרתי",
+      "price": 50,
+      "image": "/images/צילום מסך 2025-06-16 125934.png"
     }
   ]
 }

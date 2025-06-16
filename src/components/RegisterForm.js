@@ -33,7 +33,7 @@ export default function RegisterForm({ setUser }) {
   };
 
   return (
-    <form onSubmit={handleRegister} className="max-w-md mx-auto p-4">
+    <form onSubmit={handleRegister} className="login-form">
       <h2 className="text-2xl mb-4">הרשמה</h2>
       <input
         type="email"

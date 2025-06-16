@@ -30,14 +30,13 @@ export default function LoginForm({ setUser }) {
   };
 
   return (
-    <form onSubmit={handleLogin} className="max-w-md mx-auto p-4">
+    <form onSubmit={handleLogin} className="login-form">
       <h2 className="text-2xl mb-4">התחברות</h2>
       <input
         type="email"
         placeholder="אימייל"
         value={email}
         onChange={e => setEmail(e.target.value)}
-        className="w-full p-2 mb-2 border rounded"
         required
       />
       <input
@@ -45,7 +44,6 @@ export default function LoginForm({ setUser }) {
         placeholder="סיסמה"
         value={password}
         onChange={e => setPassword(e.target.value)}
-        className="w-full p-2 mb-4 border rounded"
         required
       />
       {error && <p className="text-red-600 mb-2">{error}</p>}
